@@ -30,7 +30,7 @@ insert into tb_produto (Tipo, Quantidade, Valor, Id_Categoria) values
     ("Costela", 22, 45.33, 1);
 
 select*from tb_produto where Valor > 50;
-select*from tb_produto where Valor >=3 and Valor<60;
+select*from tb_produto where Valor between 3 and 60;
 select*from tb_produto where Tipo like "co%";
 select*from tb_categoria inner join tb_produto on tb_produto.Id_Categoria = tb_categoria.IdCategoria; 
 select*from tb_categoria inner join tb_produto on tb_produto.Id_Categoria = tb_categoria.IdCategoria where tb_categoria.Animal = "Galinha";
